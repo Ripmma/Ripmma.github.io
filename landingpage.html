@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Javascript Class Application</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<style type="text/css">
+
+			body {
+				font-family:'Raleway', sans-serif;
+				text-align: center;
+				background-color:#282828;
+				color:white;
+				margin:0;
+				padding:0;
+			}
+
+			.size {
+				font-size:30px;
+				transition:.3s;
+			}
+
+			.size:hover {
+				color:#0f0f0f;
+				transition:.3s;
+			}
+
+			header {
+				background-image:url("galaxypic.jpg");
+				background-size:cover;
+				padding-bottom:20px;
+				transition:.3s;
+			}
+
+			header > img {
+				width:170px;
+				height:170px;
+				border:solid red 5px;
+				border-radius:40%;
+				position:relative;
+				top:15px;
+			}
+
+			header:hover {
+				color:red;
+				transition:.3s;
+			}
+
+			#description {
+				padding:0 300px;
+				padding-bottom:35px;
+			}
+
+			p {
+				transition:.3s;
+			}
+
+			p:hover {
+				transition:.3s;
+				color:#0074b7;
+			}
+
+			#links {
+				background-color:#212121;
+				padding-top:20px;
+				padding-bottom:250px;
+			}
+
+			#links > ul {
+				position:absolute;
+				left:39%;
+			}
+
+			#links > ul > li {
+				list-style:none;
+				margin:0 0 30px 40px;
+				font-size:30px;
+				text-align:center;
+				font-weight:bold;
+			}
+
+			li > a {
+				text-decoration:none;
+				color:white;
+				transition:.3s;
+				padding:10px;
+				border-radius:10px;
+			}
+
+			li > #twitter:hover {
+				transition:.3s;
+				color:#1DA1F2;
+				background-color:white;			
+			}
+
+			li > #github:hover {
+				transition:.3s;
+				color:white;
+				background-color:black;			
+			}
+
+			li > #linkedin:hover {
+				transition:.3s;
+				color:#0077B5;
+				background-color:white;			
+			}
+
+			#hobbies {
+				padding-bottom:40px;
+			}
+
+			table {
+				font-size:25px;
+				transition:.3s;
+			}
+
+			table:hover {
+				transition:.3s;
+				color:red;
+			}
+
+			table, th, td {
+				border:2px solid white;
+				border-collapse: collapse;
+				padding:10px 3em;
+				margin-top:2em;
+			}
+
+			footer {
+				background-color:black;
+				height:60px;
+				width:100%;
+				overflow:hidden;
+				transition:.3s;
+			}
+
+			footer:hover {
+				color:#0074b7;
+				transition:.3s;
+			}
+
+
+
+			@media (max-width: 500px) {
+				header {
+					bottom:21em;
+				}
+
+
+			}
+
+			
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+				<img src="flame.jpg">
+				<hr style="width:15em; position:relative; top:12px;">
+				<h1>Rene Pereyra</h1>
+				<h4>Uber/Lyft driver. Student at The Knowledge House. MMA competor.<h4>
+
+		</header>
+
+		<div id="description">
+			
+			<h3 class="size">Why should I get accepted?</h3>
+			<hr style="width:20em;">
+			<p>I'm Rene Isaac Pereyra. I'm an Uber/Lyft driver who is passionate about coding and the sport of Mixed Martial Arts. With my self taught investment within online tutorials and a course I purchased on Udemy learning HTML5, CSS3, Basic Javascript, Basic jQuery and Bootstrap, and also currently taking the Intro to Tech Entrepreneurship program, I believe I'm a great candidate for this program. With my passion being a developer one day, I believe I can excel with this program and become efficient and a professional web developer.</p>
+
+		</div>
+
+		<div id="links">
+			
+			<h3 class="size">Social Links</h3>
+			<hr style="width:8em;">
+			<ul>
+				<li><a id="twitter"href="https://twitter.com/renepeterpan"<i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+				<li><a id="github"href="https://github.com/Ripmma"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+				<li><a id="linkedin" href="https://www.linkedin.com/in/rene-pereyra-ba3878b6/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+			</ul>
+
+		</div>
+
+		<div id="hobbies">
+
+			<h3 class="size">Hobbies</h3>
+			<hr style="width:6em;">
+			
+			<table align="center">
+				
+				<caption style="font-weight:bold; font-size:40px; margin-bottom:20px;">Favorite...</caption>
+
+				<tr>
+					
+					<th>Video Games</th>
+					<th>Anime Shows</th>
+					<th>Outdoor Activities</th>
+					<th>Idols</th>
+
+				</tr>
+
+				<tr>
+					
+					<td>Destiny</td>
+					<td>Dragon Ball Series</td>
+					<td>Handball</td>
+					<td>Bruce Lee</td>
+
+				</tr>
+
+				<tr>
+					
+					<td>Dying Light</td>
+					<td>Attack On Titan</td>
+					<td>Ripstik riding</td>
+					<td>George St Pierre</td>
+
+				</tr>
+
+				<tr>
+					
+					<td>Battlefield 1</td>
+					<td>Fairy Tail</td>
+					<td>Parkour</td>
+					<td>Morrie Shwartz</td>
+
+				</tr>
+
+			</table>
+
+		</div>
+
+		<footer>
+			
+			<h3>Copyright&copy; Rene I Pereyra</h3>
+
+		</footer>
+
+	</body>
+
+</html>
