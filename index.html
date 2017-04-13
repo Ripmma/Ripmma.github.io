@@ -1,241 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-	<head>
+<head>
 
-		<title>Javascript Class Application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Rene Pereyra's Portfolio</title>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		<script src="https://use.fontawesome.com/d2d109124f.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.css" rel="stylesheet">
 
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
 
+</head>
 
-		<style type="text/css">
+<body>
 
-			body {
-				font-family:'Raleway', sans-serif;
-				text-align: center;
-				color:#212121;
-				margin:0 auto;
-			}
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-			.size {
-				font-size:30px;
-			}
+    <!-- Header -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="intro-message">
+                <h1>Landing Page</h1>
+                <h3>A Template by Start Bootstrap</h3>
+                <hr class="intro-divider">
+                <ul class="list-inline intro-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
+    <!-- Page Content -->
+    <section class="content-section-a">
 
-			header {
-				background-size:cover;
-				padding:80px 0px;
-				transition:.3s;
-			}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
+                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                </div>
+                <div class="col-lg-5 offset-lg-2">
+                    <img class="img-fluid" src="img/ipad.png" alt="">
+                </div>
+            </div>
 
-			header > img {
-				width:170px;
-				height:170px;
-				border:solid red 5px;
-				border-radius:40%;
-				position:relative;
-				bottom:10px;
-			}
+        </div>
+        <!-- /.container -->
+    </section>
 
-			header:hover {
-				color:red;
-				transition:.3s;
-			}
+    <section class="content-section-b">
 
-			#description {
-				padding:35px 0px;
-			}
+        <div class="container">
 
-			p {
-				transition:.3s;
-			}
+            <div class="row">
+                <div class="col-lg-5 push-lg-7">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
+                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                </div>
+                <div class="col-lg-5 pull-lg-5">
+                    <img class="img-fluid" src="img/dog.png" alt="">
+                </div>
+            </div>
 
-			p:hover {
-				transition:.3s;
-				color:#0074b7;
-			}
+        </div>
+        <!-- /.container -->
 
-			#links {
-				padding:40px 0px;			
-			}
+    </section>
+    <!-- /.content-section-b -->
 
-			#hobbies {
-				padding:40px 0px;
-			}
+    <section class="content-section-a">
 
-			table {
-				font-size:25px;
-				transition:.3s;
-			}
+        <div class="container">
 
-			table:hover {
-				transition:.3s;
-				color:red;
-			}
+            <div class="row">
+                <div class="col-lg-5">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
+                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                </div>
+                <div class="col-lg-5 offset-lg-2">
+                    <img class="img-fluid" src="img/phones.png" alt="">
+                </div>
+            </div>
 
-			table, th, td {
-				border:2px solid white;
-				border-collapse: collapse;
-				padding:10px 3em;
-				margin-top:2em;
-			}
+        </div>
+        <!-- /.container -->
 
-			footer {
-				background-color:black;
-				height:60px;
-				width:100%;
-				overflow:hidden;
-				transition:.3s;
-				padding-top:10px;
-				color:white;
-			}
+    </section>
+    <!-- /.content-section-a -->
 
-			footer:hover {
-				color:#0074b7;
-				transition:.3s;
-			}
+    <aside class="banner">
 
-			#projects {
-				padding-top:20px;
-				padding-bottom:250px;
-			}
+        <div class="container">
 
-			
-		</style>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Connect to Start Bootstrap:</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-	</head>
+        </div>
+        <!-- /.container -->
 
-	<body data-spy="scroll" data-target="#navbar" offset="50">
+    </aside>
+    <!-- /.banner -->
 
-		<nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">Navbar</a>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+        </div>
+    </footer>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Projects</a>
-		      </li>
-		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
-		  </div>
-		</nav>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-		<header>
-
-				<img src="flame.jpg">
-				<h1>Rene Pereyra</h1>
-				<hr style="width:15em;">
-				<h4>Uber/Lyft driver. Student at The Knowledge House. MMA competor.<h4>
-
-		</header>
-
-		<div class="container">
-
-			<div id="description">
-				
-				<h3 class="size">About Me</h3>
-				<hr style="width:4em;">
-				<p>I'm Rene Isaac Pereyra. I'm an Uber/Lyft driver who is passionate about coding and the sport of Mixed Martial Arts. With my passion being a developer one day, I believe I can excel with this program and become efficient and a professional web developer.</p>
-
-			</div>
-
-		</div>
-
-		<div id="links">
-
-			<div class="container">
-				
-				<h3 class="size">Social Links</h3>
-				<hr style="width:7em;">
-
-		  		<a class="btn btn-secondary btn-lg" href="https://twitter.com/renepeterpan" role="button"><i class="fa fa-twitter" aria-hidden="true"></i>
-		  		Twitter</a>
-		  		<a class="btn btn-secondary btn-lg" href="http://codepen.io/PeterPan1/" role="button"><i class="fa fa-codepen" aria-hidden="true"></i>  Codepen</a>
-		  		<a class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/rene-pereyra-ba3878b6?trk=nav_responsive_tab_profile_pic" role="button">
-		  		<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-		  		LinkedIn</a>
-
-
-			</div>
-
-		</div>
-
-		<div id="hobbies">
-
-			<div class="container">
-
-				<h3 class="size">Hobbies</h3>
-				<hr style="width:12em">
-				<table class="table table-hover">
-				  <thead>
-				    <tr>
-				      <th>#</th>
-				      <th>Activities</th>
-				      <th>Video Games</th>
-				      <th>Anime Shows</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <th scope="row">1</th>
-				      <td>Destiny</td>
-				      <td>Handball</td>
-				      <td>Dragon Ball Series</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">2</th>
-				      <td>Parkour</td>
-				      <td>Dying Light</td>
-				      <td>Fairy Tail</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">3</th>
-				      <td>Ripstik Riding</td>
-				      <td>Battlefield1 1</td>
-				      <td>Attack On Titan</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-			</div>
-
-		</div>
-
-			<div id="projects">
-				
-				<h3 class="size">Projects</h3>
-				<hr style="width:6em;">
-
-			</div>
-
-		<footer>
-			
-			<h3>Copyright&copy; Rene I Pereyra</h3>
-
-		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous">
-
-	</body>
+</body>
 
 </html>
