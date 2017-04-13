@@ -7,33 +7,30 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+
+		<script src="https://use.fontawesome.com/d2d109124f.js"></script>
+
+
+
 
 		<style type="text/css">
 
 			body {
 				font-family:'Raleway', sans-serif;
 				text-align: center;
-				background-color:#282828;
-				color:white;
-				margin:0;
-				padding:0;
+				color:#212121;
+				margin:0 auto;
 			}
 
 			.size {
 				font-size:30px;
-				transition:.3s;
 			}
 
-			.size:hover {
-				color:#0f0f0f;
-				transition:.3s;
-			}
 
 			header {
-				background-image:url("galaxypic.jpg");
 				background-size:cover;
-				padding-bottom:20px;
+				padding:80px 0px;
 				transition:.3s;
 			}
 
@@ -43,7 +40,7 @@
 				border:solid red 5px;
 				border-radius:40%;
 				position:relative;
-				top:15px;
+				bottom:10px;
 			}
 
 			header:hover {
@@ -52,8 +49,7 @@
 			}
 
 			#description {
-				padding:0 300px;
-				padding-bottom:35px;
+				padding:35px 0px;
 			}
 
 			p {
@@ -66,52 +62,11 @@
 			}
 
 			#links {
-				background-color:#212121;
-				padding-top:20px;
-				padding-bottom:250px;
-			}
-
-			#links > ul {
-				position:absolute;
-				left:39%;
-			}
-
-			#links > ul > li {
-				list-style:none;
-				margin:0 0 30px 40px;
-				font-size:30px;
-				text-align:center;
-				font-weight:bold;
-			}
-
-			li > a {
-				text-decoration:none;
-				color:white;
-				transition:.3s;
-				padding:10px;
-				border-radius:10px;
-			}
-
-			li > #twitter:hover {
-				transition:.3s;
-				color:#1DA1F2;
-				background-color:white;			
-			}
-
-			li > #github:hover {
-				transition:.3s;
-				color:white;
-				background-color:black;			
-			}
-
-			li > #linkedin:hover {
-				transition:.3s;
-				color:#0077B5;
-				background-color:white;			
+				padding:40px 0px;			
 			}
 
 			#hobbies {
-				padding-bottom:40px;
+				padding:40px 0px;
 			}
 
 			table {
@@ -137,6 +92,8 @@
 				width:100%;
 				overflow:hidden;
 				transition:.3s;
+				padding-top:10px;
+				color:white;
 			}
 
 			footer:hover {
@@ -144,14 +101,9 @@
 				transition:.3s;
 			}
 
-
-
-			@media (max-width: 500px) {
-				header {
-					bottom:21em;
-				}
-
-
+			#projects {
+				padding-top:20px;
+				padding-bottom:250px;
 			}
 
 			
@@ -159,91 +111,130 @@
 
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target="#navbar" offset="50">
+
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Navbar</a>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Projects</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
 
 		<header>
 
 				<img src="flame.jpg">
-				<hr style="width:15em; position:relative; top:12px;">
 				<h1>Rene Pereyra</h1>
+				<hr style="width:15em;">
 				<h4>Uber/Lyft driver. Student at The Knowledge House. MMA competor.<h4>
 
 		</header>
 
-		<div id="description">
-			
-			<h3 class="size">Why should I get accepted?</h3>
-			<hr style="width:20em;">
-			<p>I'm Rene Isaac Pereyra. I'm an Uber/Lyft driver who is passionate about coding and the sport of Mixed Martial Arts. With my self taught investment within online tutorials and a course I purchased on Udemy learning HTML5, CSS3, Basic Javascript, Basic jQuery and Bootstrap, and also currently taking the Intro to Tech Entrepreneurship program, I believe I'm a great candidate for this program. With my passion being a developer one day, I believe I can excel with this program and become efficient and a professional web developer.</p>
+		<div class="container">
+
+			<div id="description">
+				
+				<h3 class="size">About Me</h3>
+				<hr style="width:4em;">
+				<p>I'm Rene Isaac Pereyra. I'm an Uber/Lyft driver who is passionate about coding and the sport of Mixed Martial Arts. With my passion being a developer one day, I believe I can excel with this program and become efficient and a professional web developer.</p>
+
+			</div>
 
 		</div>
 
 		<div id="links">
-			
-			<h3 class="size">Social Links</h3>
-			<hr style="width:8em;">
-			<ul>
-				<li><a id="twitter"href="https://twitter.com/renepeterpan"<i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-				<li><a id="github"href="https://github.com/Ripmma"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-				<li><a id="linkedin" href="https://www.linkedin.com/in/rene-pereyra-ba3878b6/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-			</ul>
+
+			<div class="container">
+				
+				<h3 class="size">Social Links</h3>
+				<hr style="width:7em;">
+
+		  		<a class="btn btn-secondary btn-lg" href="https://twitter.com/renepeterpan" role="button"><i class="fa fa-twitter" aria-hidden="true"></i>
+		  		Twitter</a>
+		  		<a class="btn btn-secondary btn-lg" href="http://codepen.io/PeterPan1/" role="button"><i class="fa fa-codepen" aria-hidden="true"></i>  Codepen</a>
+		  		<a class="btn btn-secondary btn-lg" href="https://www.linkedin.com/in/rene-pereyra-ba3878b6?trk=nav_responsive_tab_profile_pic" role="button">
+		  		<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+		  		LinkedIn</a>
+
+
+			</div>
 
 		</div>
 
 		<div id="hobbies">
 
-			<h3 class="size">Hobbies</h3>
-			<hr style="width:6em;">
-			
-			<table align="center">
-				
-				<caption style="font-weight:bold; font-size:40px; margin-bottom:20px;">Favorite...</caption>
+			<div class="container">
 
-				<tr>
-					
-					<th>Video Games</th>
-					<th>Anime Shows</th>
-					<th>Outdoor Activities</th>
-					<th>Idols</th>
+				<h3 class="size">Hobbies</h3>
+				<hr style="width:12em">
+				<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th>#</th>
+				      <th>Activities</th>
+				      <th>Video Games</th>
+				      <th>Anime Shows</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Destiny</td>
+				      <td>Handball</td>
+				      <td>Dragon Ball Series</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>Parkour</td>
+				      <td>Dying Light</td>
+				      <td>Fairy Tail</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Ripstik Riding</td>
+				      <td>Battlefield1 1</td>
+				      <td>Attack On Titan</td>
+				    </tr>
+				  </tbody>
+				</table>
 
-				</tr>
-
-				<tr>
-					
-					<td>Destiny</td>
-					<td>Dragon Ball Series</td>
-					<td>Handball</td>
-					<td>Bruce Lee</td>
-
-				</tr>
-
-				<tr>
-					
-					<td>Dying Light</td>
-					<td>Attack On Titan</td>
-					<td>Ripstik riding</td>
-					<td>George St Pierre</td>
-
-				</tr>
-
-				<tr>
-					
-					<td>Battlefield 1</td>
-					<td>Fairy Tail</td>
-					<td>Parkour</td>
-					<td>Morrie Shwartz</td>
-
-				</tr>
-
-			</table>
+			</div>
 
 		</div>
+
+			<div id="projects">
+				
+				<h3 class="size">Projects</h3>
+				<hr style="width:6em;">
+
+			</div>
 
 		<footer>
 			
 			<h3>Copyright&copy; Rene I Pereyra</h3>
 
 		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous">
 
 	</body>
 
