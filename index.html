@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <script src="https://use.fontawesome.com/185b80a056.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 
     <style type="text/css">
       
@@ -69,24 +71,24 @@
 
   </head>
 
-  <body>
+  <body id="home">
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#">Rene Pereyra</a>
+            <a class="navbar-brand smoothScroll" href="#home">Rene Pereyra</a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link smoothScroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link smoothScroll" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#links">Links</a>
+                        <a class="nav-link smoothScroll" href="#links">Links</a>
                     </li>
                 </ul>
             </div>
@@ -109,7 +111,7 @@
           <div class="col-lg-5">
             <h2>About Me</h2>
             <hr>
-            <p class="lead">I'm Rene Isaac Pereyra and I'm currenty a student at The Knowledge House. I'm learning how to become a full-stack developer and understanding the different job industries out there and what kinds of experiences users/clients would like for webpages.</p>
+            <p class="lead">I'm Rene Isaac Pereyra and I'm an aspiring full-stack developer. I'm currenty a student at The Knowledge House. I'm learning how to become a full-stack developer and understanding the different job industries out there and what kinds of experiences users/clients would like for webpages.</p>
           </div>
           <div class="col-lg-5 offset-lg-2">
             <img class="img-fluid" src="user-icon.png">
@@ -124,7 +126,7 @@
             <hr>
             <p class="lead">Here is a list of my projects. There will be more upcoming projects soon!</p>
           </div>
-          <div class="col-lg-6 pull-lg-5">
+          <div class="col-md-6 pull-md-5">
             <img class="img-fluid" src="Folder-Add-icon.png" alt="">
           </div>
        </div>
@@ -157,15 +159,15 @@
         <div class="container">
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Home</a>
+                    <a class="smoothScroll" href="#home">Home</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#about">About</a>
+                    <a class="smoothScroll" href="#about">About</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#links">Links</a>
+                    <a class="smoothScroll" href="#projects">Projects</a>
                 </li>
             </ul>
             <p class="copyright text-muted small">Copyright &copy; Rene I Pereyra</p>
@@ -176,5 +178,28 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+    </script>
+
   </body>
 </html>
