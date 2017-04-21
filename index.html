@@ -184,6 +184,11 @@
 
     <script type="text/javascript">
 
+    $(document).ready(function(){
+    $("html").hide(0).delay(500).fadeIn(2000)
+  });
+
+
 		$(function() {
 		  $('a[href*="#"]:not([href="#"])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
